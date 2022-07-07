@@ -1,0 +1,12 @@
+.boton{
+    background-color: #706c6c;
+    color: black;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 24px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+}
+
+.boton:hover {opacity: 1}
