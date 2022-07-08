@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Card from "./componentes/Card";
 import Division from "./componentes/Division";
 import Multiplicacion from "./componentes/Multiplicacion";
 import Numero from "./componentes/Numero";
