@@ -1,4 +1,5 @@
-.boton{
+@media (min-width: 900px) {
+  .boton {
     background-color: #e7e7e7;
     color: black;
     border-radius: 14px;
@@ -7,6 +8,21 @@
     width: 80px;
     height: 80px;
     opacity: 0.7;
+  }
+}
+@media (max-width: 900px) {
+  .boton {
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+  }
 }
 
-.boton:hover {opacity: 1}
+.boton:hover {
+  opacity: 1;
+}

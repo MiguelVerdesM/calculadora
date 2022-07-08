@@ -45,31 +45,35 @@ function App() {
   };
 
   return (
-    <Card>
-      <Pantalla
-        inp1={currentInput1}
-        oper={currentInputOpe}
-        inp2={currentInput2}
-      ></Pantalla>
+    
       <div className={styles.div}>
-        <table id="matrix">
+        <table id="matrix"className={styles.table}>
+          <tr >
+          <td colSpan='4'>
+              <Pantalla
+                inp1={currentInput1}
+                oper={currentInputOpe}
+                inp2={currentInput2}
+              ></Pantalla>
+            </td>
+          </tr>
           <tr>
-            <td>
+            <td >
               <Numero numOnClick={numOnClickHandler} num={7} />
             </td>
-            <td>
+            <td >
               <Numero numOnClick={numOnClickHandler} num={8} />
             </td>
-            <td>
+            <td >
               <Numero numOnClick={numOnClickHandler} num={9} />
             </td>
-            <td>
+            <td >
               <Operador opeOnClick={opeOnClickHandler} ope="/" />
             </td>
           </tr>
 
           <tr>
-            <td>
+            <td >
               <Numero numOnClick={numOnClickHandler} num={4} />
             </td>
             <td>
@@ -116,7 +120,7 @@ function App() {
           </tr>
         </table>
       </div>
-    </Card>
+    
   );
 }
 
